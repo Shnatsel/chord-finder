@@ -1,0 +1,40 @@
+____________________________
+____________________________
+________Chord Finder________
+____________________________
+
+** This code is GPL V2 licensed, see LICENSE file for more information **
+
+This program displays graphical representations of various static and movable chords.
+For more information about the code, see the docs directory
+
+Requirements:
+- python 2.7
+- wx widgets
+- Linux (this code is not tested on windows, please email me with feedback and info of experiences)
+
+Installation:
+    (From .rpm file)
+	- Install the rpm with "rpm -ivh chord-finder-?.?.rpm"
+
+Uninstallation:
+    (Installed from rpm)
+	- Run "rpm -e chord-finder" or "yum remove chord-finder"
+
+Contact:
+- Please use my googlemail address, which is available from the project's pages
+
+URL:
+- http://code.google.com/p/chord-finder
+
+KNOWN ISSUES:
+    - Code needs more robustness
+    - Slight display issue with arc on barre chords with 2 string spans
+    - Phantom root nodes are not displayed
+    - No code to display root note on root finder image
+    - Many arbitory values and hard coded values / fonts
+
+Credits:
+- jago25_98@hotmail.com; legacy spanish translation
+- Stepen Smally; initial concept
+- Joanna Pearce; movable chord data

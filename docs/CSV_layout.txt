@@ -1,0 +1,50 @@
+CSV FILE INFO:
+The basic layout of the CSV files is that each chord takes up one line. 
+White space is significant and should be one single space charactor between data lists, with none surrounding commas
+
+Chord CSV Layout:
+type,root,shortName,longName,fingerData,fretData
+
+
+See below for more information on each field.
+
+------------------------------------------------------------------------------------------------------------------------
+Type:
+
+The type field is simply either "Static" or "Movable", depending upon if the chord is a static or moveable (sliding / barre) chord
+
+------------------------------------------------------------------------------------------------------------------------
+Fretting:
+
+Fret numbers are simply given as a white space delimited list in order of "E" to "e" string, one per string, 
+and are relative to the nut of the instrument. 
+
+0 is used to denote an open string, 
+-1 is used to denote that the string is not played
+
+E.g: E minor (Em) would be "0 2 2 0 0 0" as strings 2 and 3 are played at fret 2 and the rest are left open.
+
+
+------------------------------------------------------------------------------------------------------------------------
+Fingering:
+"fingerData" refers to a simple method of recording which finger plays the note.
+Each finger is given a number from 1 to 4 and this is written down (white space seperated) in 
+order from bottom E string to top e string.
+
+Zero is used where no finger plays that string.
+
+0 = not fingered
+1 = index finger
+2 = middle finger
+3 = ring finger
+4 = little (pinky) finger
+
+For example, the E minor chord would be "0 2 3 0 0 0" because the fingers used are the middle finger and the ring finger
+
+For barre chords, an arc is drawn between strings which represents that several strings are played with the same finger. 
+This is denoted in the CSV file by a dash and a number in brackets following the finger info for a string, 
+for example "1(-3)" which would mean that finger 1 would arc from the current string to string 3.
+Note that the arc must be positive, i.e: you cannot at string 6 mention that it arcs to string 2, 
+but when at 2 that it arcs to 6 is fine.
+
+For example: 1(-6) 3 1 2 1 1 would mean that finger one plays 4 notes by holding down all strings

@@ -1,0 +1,30 @@
+--/--/2001 - 1.0 - WIP
+    Made slightly more portable
+    Fixed site-apckages install location need
+    Few minor gui alterations 
+    Fixed bug in monochrome palette
+    Added a few redraw triggers
+    Added ability to play chord
+
+11/07/2011 - 0.4
+    Images are now tempfile files
+    Refactor to PEP-8 standard (pylint)
+    Improved rpm packaging (ditched distutils)
+    Standardised the executable naming
+    Created project mirror over at sourceforge for file hosting
+
+09/06/2011 - 0.3
+    Initital implementation of python distutils
+    Added colour / Black and white output choice
+    Largely inverted B&W palette to help save ink if printed
+    Added ability to filter by dim/dom/aug/maj/min/sus
+    Slightly improved code robustness
+
+08/06/2011 - 0.2
+    Fixed bugs with display of certain chords
+    Fixed bug with root finder groupbox
+    Added next/prev buttons to chord option
+
+20/03/2011 - 0.1
+    Initial check-in as a google code project
+    Moved away from SQL database to CSV file

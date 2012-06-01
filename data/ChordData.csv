@@ -1,0 +1,111 @@
+############################################################
+# Chord csv data source format:
+# type,root,shortName,longName,fingerData,fretData
+############################################################
+# STATIC CHORDS
+Static,A,Asus4,A Suspended 4th,0 0 1 2 4 0,-1 0 2 2 3 0
+Static,A,A7sus4,A Dominant 7th Suspended 4th,0 0 2 0 4 0,-1 0 2 0 3 0
+Static,A,A7,A Dominant 7th,0 0 1 0 3 0,-1 0 2 0 2 0
+Static,A,A5,A Powerchord,0 0 2 3 0 0,-1 0 2 2 0 0
+Static,A,A6,A Added 6th,0 0 1 2 3 4,-1 0 2 2 2 2
+Static,A,A7*,A Dominant 7th (alt. voicing),0 0 1 2 3 4,-1 0 2 2 2 3
+Static,A,Am7,A Minor 7th,0 0 2 0 1 0,-1 0 2 0 1 0
+Static,A,Am,A Minor,0 0 2 3 1 0,-1 0 2 2 1 0
+Static,A,Am(maj7),A Minor (Major 7th),0 0 3 1 2 0,-1 0 2 1 1 0
+Static,A,Amaj7,A Major 7th,0 0 2 1 3 0,-1 0 2 1 2 0
+Static,A,Asus2,A Suspended 2nd,0 0 1 2 0 0,-1 0 2 2 0 0
+Static,A,Am7,A Minor 7th (alt. voicing),0 0 2 0 1 4,-1 0 2 0 1 3
+Static,A,A,A Major,0 0 1 2 3 0,-1 0 2 2 2 0
+Static,B,B7,B Dominant 7th,0 2 1 3 0 4,-1 2 1 2 0 2
+Static,C,C/B,C Major on B,0 2 0 0 1 0,-1 2 -1 0 1 0
+Static,C,Csus4,C Suspended 4th,0 3 4 0 1 0,-1 3 3 0 1 0
+Static,C,Cadd9,C Major added 9th,0 2 1 0 3 4,-1 3 2 0 3 3
+Static,C,C7,C Dominant 7th,0 3 2 4 1 0,-1 3 2 3 1 0
+Static,C,Cmaj7,C Major 7th,0 3 2 0 0 0,-1 3 2 0 0 0
+Static,C,C*,C Major (alt. voicing),0 3 2 0 1 4,-1 3 2 0 1 3
+Static,C,C,C Major,0 3 2 0 1 0,-1 3 2 0 1 0
+Static,D,D7,D Dominant 7th,0 0 0 2 1 3,-1 -1 0 2 1 2
+Static,D,Dm(maj7),D Minor (Major 7th),0 0 0 2 3 1,-1 -1 0 2 2 1
+Static,D,D5,D powerchord (no third),0 0 0 1 3 0,-1 -1 0 2 3 -1
+Static,D,Dm7,D Minor 7th,0 0 0 3 1 2,-1 -1 0 2 1 1
+Static,D,Dm,D Minor,0 0 0 2 3 1,-1 -1 0 2 3 1
+Static,D,Dmaj7,D Major 7th,0 0 0 1 2 3,-1 -1 0 2 2 2
+Static,E,Emadd9,E Minor added 9th,0 2 3 0 0 4,0 2 2 0 0 2
+Static,E,E7,E Dominant 7th,0 2 0 1 0 0,0 2 0 1 0 0
+Static,E,Esus4,E Suspended 4th,0 2 3 4 0 0,0 2 2 2 0 0
+Static,E,E7#9,The Hendrix chord,0 2 0 1 3 4,0 2 0 1 3 3
+Static,E,E6,E Added 6th,0 2 3 1 4 0,0 2 2 1 2 0
+Static,E,E7*,E Dominant 7th (alt. voicing),0 2 0 1 4 0,0 2 0 1 3 0
+Static,E,Em7,E Minor 7th,0 2 0 0 0 0,0 2 0 0 0 0
+Static,E,E,E Major,0 2 3 1 0 0,0 2 2 1 0 0
+Static,E,Em,E Minor,0 2 3 0 0 0,0 2 2 0 0 0
+Static,E,E5,E Powerchord (no third),0 2 3 0 0 0,0 2 2 -1 -1 -1
+Static,E,E7sus4,E Dominant 7th Suspended 4th,0 2 0 4 0 0,0 2 0 2 0 0
+Static,E,Em(maj7,E Minor (Major 7th),0 2 1 0 0 0,0 2 1 0 0 0
+Static,E,Em7*,E Minor 7th (alt. voicing),0 1 2 0 3 4,0 2 2 0 3 3
+Static,E,Emaj7,E Major 7th,0 3 1 2 0 0,0 2 1 1 0 0
+Static,G,G/F#,G Major on F Sharp,1 0 0 0 0 3,2 -1 0 0 0 3
+Static,G,G/B,G Major on B (1st inv.),0 1 0 0 3 4,-1 2 0 0 3 3
+Static,G,Gsus4,G Suspended 4th,3 0 0 0 1 4,3 -1 0 0 1 3
+Static,G,G7,G Dominant 7th,3 2 0 0 0 1,3 2 0 0 0 1
+Static,G,G6,G Added 6th,2 1 0 0 0 0,3 2 0 0 0 0
+Static,G,Gmaj7,G Major 7th,3 2 0 0 0 1,3 2 0 0 0 2
+Static,G,G,G Major,2 1 0 0 0 3,3 2 0 0 0 3
+Static,G,G*,G Major (alt. voicing),2 1 0 0 3 4,3 2 0 0 3 3
+Static,D,Dsus4,D Suspended 4th,0 0 0 1 3 4,-1 -1 0 2 3 3
+Static,D,D,D Major,0 0 0 1 3 2,-1 -1 0 2 3 2
+Static,D,Dsus2,D Suspended 2nd,0 0 0 2 3 0,-1 -1 0 2 3 0
+Static,D,D7sus4,D Dominant 7th Suspended 4th,0 0 0 2 1 4,-1 -1 0 2 1 3
+
+# MOVEABLE CHORDS
+Movable,A,A7,A Dominant 7th,1(-6) 3 1 2 1 1,5 7 5 6 5 5
+Movable,A,Asus4,A Suspended 4th,1(-6) 2 3 4 1 1,5 7 7 7 5 5
+Movable,A,A6,A Added 6th,1(-6) 3 0 2 4 1,5 7 -1 6 7 5
+Movable,A,Am7*,A Minor 7th (alt.voicing),1(-6) 3 1 1 4 1,5 7 5 5 8 5
+Movable,A,A5,A Powerchord (no third),1 3 4 0 0 0,5 7 7 -1 -1 -1
+Movable,A,Am(maj7),A Minor (Major 7th),1(-6) 3 2 1 1 1,5 7 6 5 5 5
+Movable,A,Amaj7,A Major 7th,1(-6) 4 3 2 1 1,5 7 6 6 5 5
+Movable,A,A,A Major,1(-6) 3 4 2 1 1,5 7 7 6 5 5
+Movable,A,A7sus4,A Dominant 7th Suspended 4th,1(-6) 3 1 4 1 1,5 7 5 7 5 5
+Movable,A,Am7,A Minor 7th,1(-6) 3 1 1 1 1,5 7 5 5 5 5
+Movable,A,A7*,A Dominant 7th (alt. voicing),1(-6) 3 1 2 4 1,5 7 5 6 8 5
+Movable,A,Am,A Minor,1(-6) 3 4 1 1 1,5 7 7 5 5 5
+Movable,C,Cm/Eb,C Minor on Eb (1st inv.),0 4 2 3 1 0,-1 6 5 5 4 -1
+Movable,C,C/E,C Major on E (1st inv.),0 3 1(-5) 1 1 0,-1 7 5 5 5 -1
+Movable,D,D7***,D Dominant 7th (alt. voicing),0 0 1(-5) 1 1 3,-1 -1 7 7 7 8
+Movable,D,D9,D Dominant 9th,0 2 1 4(-6) 4 4,-1 5 4 5 5 5
+Movable,D,D7**,D Dominant 7th (alt. voicing),0 3 2 4 1 0,-1 5 4 5 3 -1
+Movable,D,Dsus2,D Suspended 2nd,0 1(-6) 3 4 1 1,-1 5 7 7 5 5
+Movable,D,D7,D Dominant 7th,0 1(-6) 3 1 4 1,-1 5 7 5 7 5
+Movable,D,D6,D Added 6th,0 1 4(-6) 4 4 4,-1 5 7 7 7 7
+Movable,D,Dm7*,D Minor 7th (alt. voicing),0 1(-4) 3 1 2 4,-1 5 7 5 6 8
+Movable,D,D7sus4*,D7 Suspended 4th (alt. voicing),0 2 3 4 1 0,-1 5 5 5 3 -1
+Movable,D,Ddim7,D Diminished 7th,0 2 3 1 4 0,-1 5 6 4 6 -1
+Movable,D,D7sus4,D Dominant 7th Suspended 4th,0 1(-6) 3 1 4 1,-1 5 7 5 8 5
+Movable,D,Dm7b5,D Half Diminished,0 1(-4) 2 1 3 0,-1 5 6 5 6 -1
+Movable,D,Dm(maj7),D Minor (Major 7th),0 1(-6) 4 2 3 1,-1 5 7 6 6 5
+Movable,D,D,D Major,0 1(-6) 2 3 4 1,-1 5 7 7 7 5
+Movable,D,D5,D Powerchord (no third),0 1 3 4 0 0,-1 5 7 7 -1 -1
+Movable,D,Dsus4,D Suspended 4th,0 1(-6) 2 3 4 1,-1 5 7 7 8 5
+Movable,D,D7*,D Dominant 7th (alt. voicing),0 1(-4) 2 1 3 4,-1 5 7 5 7 8
+Movable,D,Dm7,D Minor 7th,0 1(-6) 3 1 2 1,-1 5 7 5 6 5
+Movable,D,Dmaj7,D Major 7th,0 1(-6) 3 2 4 1,-1 5 7 6 7 5
+Movable,D,D7#9,The Hendrix Chord,0 2 1 3 4 0,-1 5 4 5 6 -1
+Movable,D,D*,D Major (alt. voicing),0 4 3 1(-6) 2 1,-1 5 4 2 3 2
+Movable,D,Dmaj7*,D Major 7th (alt. voicing),0 0 1(-5) 1 1 4,-1 -1 7 7 7 9
+Movable,D,Dm,D Minor,0 1(-6) 3 4 2 1,-1 5 7 7 6 5
+Movable,E,E/G#,E Major on G# (1st inv.),0 0 4 1 3 2,-1 -1 6 4 5 4
+Movable,G,G7sus4,G Dominant 7th Suspended 4th,0 0 1 3 2 4,-1 -1 5 7 6 8
+Movable,G,Gsus2,G Suspended 2nd,0 0 1(-6) 3 4 1,-1 -1 5 7 8 5
+Movable,G,Gadd9,G Added 9th,0 0 3 2 1 4,-1 -1 5 4 3 5
+Movable,G,Gm(maj7),G Minor (Major 7th),0 0 1 3 4 2,-1 -1 5 7 7 6
+Movable,G,G7b9,G Dominant 7th Flattened 9th,0 0 2 1(-6) 3 1,-1 -1 5 4 6 4
+Movable,G,G5,G Powerchord (no third),0 0 1 3 4 0,-1 -1 5 7 8 -1
+Movable,G,Gaug,G Augmented (G#5 G+),0 0 4 2 3 1,-1 -1 5 4 4 3
+Movable,G,Gmaj7,G Major 7th,0 0 4 3 2 1,-1 -1 5 4 3 2
+Movable,G,Gsus4,G Suspended 4th,0 0 1 3 4(-6) 4,-1 -1 5 7 8 8
+Movable,G,G7,G Dominant 7th,0 0 1 3 2 4,-1 -1 5 7 6 7
+Movable,G,Gm7,G Minor 7th,0 0 1 4 2 3,-1 -1 5 7 6 6
+Movable,G,Gm,G Minor,0 0 1 3 4 2,-1 -1 5 7 8 6
+Movable,G,Gdim7,G Diminished 7th,0 0 1(-5) 2 1 3,-1 -1 5 6 5 6
+Movable,G,Gmadd9,G Minor Added 9th,0 0 3 1(-5) 1 4,-1 -1 5 3 3 5
