@@ -1,6 +1,6 @@
 """ Module for drawing the main chord image """
 
-import Image, ImageDraw, ImageFont
+import PIL.Image, PIL.ImageDraw, PIL.ImageFont
 
 def draw_chord(instrument, palette, chord_type, finger_data_str, fret_data_str, image_dimentions, output_file):
 	""" Draw the main chord image to file """
@@ -21,9 +21,9 @@ def draw_chord(instrument, palette, chord_type, finger_data_str, fret_data_str, 
 	# Create a new image
 	image_width = image_dimentions[0]
 	image_height = image_dimentions[1]
-	image = Image.new('RGB', image_dimentions)
+	image = PIL.Image.new('RGB', image_dimentions)
 
-	draw = ImageDraw.Draw(image)
+	draw = PIL.ImageDraw.Draw(image)
 	# Draw the fretboard
 	draw.polygon([(instrument.margin, instrument.top_gap + instrument.nut_width), (image_width, instrument.top_gap + instrument.nut_width), (image_width, image_height), (instrument.margin, image_height)], palette.fret_board_colour)
 
@@ -42,7 +42,7 @@ def draw_chord(instrument, palette, chord_type, finger_data_str, fret_data_str, 
 			point_b = (instrument.margin - 3,  (fret_num * instrument.fret_spacing) + instrument.top_gap + instrument.string_width)
 			point_c = (instrument.margin - 10, (fret_num * instrument.fret_spacing) + instrument.top_gap + instrument.string_width + 5)
 			draw.polygon((point_a, point_b, point_c), palette.fret_tri_colour)
-			sans16 = ImageFont.truetype (font_path, 20)
+			sans16 = PIL.ImageFont.truetype (font_path, 20)
 			text_pos = (3, (fret_num * instrument.fret_spacing) + instrument.top_gap - 10)	# the 3 is arb, 10 allows for text font size
 			draw.text(text_pos, 'F'+str(fret_num+movable_shift), font=sans16, fill=palette.tri_text_colour)		
 			
@@ -118,7 +118,7 @@ def draw_chord(instrument, palette, chord_type, finger_data_str, fret_data_str, 
 			# Draw finger text
 			x_pos -= (instrument.finger_font_size / 2)
 			y_pos -= (instrument.finger_font_size / 2)
-			sans16 = ImageFont.truetype (font_path, 20)
+			sans16 = PIL.ImageFont.truetype (font_path, 20)
 			draw.text((x_pos+4, y_pos), finger_str, font=sans16, fill=palette.finger_text_colour)	# +4 is to make text char line up correctly			
 			
 	del draw 

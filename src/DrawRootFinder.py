@@ -1,6 +1,6 @@
 """ Module that draws the full fretboard image for movable chords """
 
-import Image, ImageDraw, ImageFont
+import PIL.Image, PIL.ImageDraw, PIL.ImageFont
 
 class ChordNotFound(Exception):
 	""" Placeholder class for custom error raising """
