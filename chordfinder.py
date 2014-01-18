@@ -11,12 +11,7 @@ CONFIG = {}
 
 CONFIG['VERSION'] = '1.0'
 
-if os.path.realpath(__file__).split('/')[1] == 'usr':
-    # Installed
-    CONFIG['data_dir'] = '/usr/data/chord-finder/'
-else:
-    # Not Installed / Dev environment
-    CONFIG['data_dir'] = os.path.dirname(os.path.abspath(__file__))+'/../data/'
+CONFIG['data_dir'] = '/etc/chord-finder/'
 
 #################
 #### MAIN () ####
