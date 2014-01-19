@@ -28,12 +28,12 @@ def draw_root_finder(instrument, palette, chord, image_dimentions, output_file):
 	# Create a new image
 	image_width = image_dimentions[0]
 	image_height = image_dimentions[1]
-	image = Image.new("RGB", image_dimentions)
+	image = PIL.Image.new("RGB", image_dimentions)
 
 	text_top_area = 20
 	text_bottom_area = 20
 
-	draw = ImageDraw.Draw(image)
+	draw = PIL.ImageDraw.Draw(image)
 	# Draw the fretboard
 	draw.polygon([(instrument.margin/2, text_top_area), (image_width, text_top_area), (image_width, image_height-text_bottom_area), (instrument.margin/2, image_height-text_bottom_area)], palette.fret_board_colour)
 
@@ -75,7 +75,7 @@ def draw_root_finder(instrument, palette, chord, image_dimentions, output_file):
 	name_list = get_fret_naming(chord.root)
 	name_list_evens = name_list[0::2]
 	name_list_odds = name_list[1::2]
-	sans16 = ImageFont.truetype (font_path, 10)	
+	sans16 = PIL.ImageFont.truetype (font_path, 10)	
 	x_pos = 0
 	root_name_spacing = 38
 	for root_name in name_list_odds:

@@ -5,11 +5,11 @@
 
 import wx, os
 
-import ChordData, DrawChord, DrawRootFinder, Instruments, Palettes, Gui
+from chordfinder import ChordData, DrawChord, DrawRootFinder, Instruments, Palettes, Gui
 
 CONFIG = {}
 
-CONFIG['VERSION'] = '1.0'
+CONFIG['VERSION'] = '0.9'
 
 CONFIG['data_dir'] = '/etc/chord-finder/'
 

@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='chord_finder',
-        version='0.0.1',
+        version='0.9.0',
         author='Robert Pearce',
         author_email='siology.io@gmail.com',
         url='https://github.com/robertpearce/chord-finder',
@@ -18,7 +18,7 @@ setup(name='chord_finder',
                      'Topic :: Utilities'),
         packages=['chordfinder'],
         requires=['wxPython', 'Pillow'],
-        scripts=['chordfinder.py'],
+        scripts=['chord-finder'],
         data_files=[('/etc/chord-finder', ['data/ChordData.csv','data/favicon.ico','data/welcomeChord.png'])]
       )
 
