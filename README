@@ -14,12 +14,10 @@ Requirements:
 - Linux (this code is not tested on windows, please email me with feedback and info of experiences)
 
 Installation:
-    (From .rpm file)
-	- Install the rpm with "rpm -ivh chord-finder-?.?.rpm"
+    python-pip install chord_finder
 
 Uninstallation:
-    (Installed from rpm)
-	- Run "rpm -e chord-finder" or "yum remove chord-finder"
+    python-pip uninstall chord_finder
 
 Contact:
 - Please use my googlemail address, which is available from the project's pages
@@ -28,10 +26,10 @@ URL:
 - http://code.google.com/p/chord-finder
 
 KNOWN ISSUES:
-    - Code needs more robustness
+    - Code needs a little more robustness
     - Slight display issue with arc on barre chords with 2 string spans
     - Phantom root nodes are not displayed
-    - No code to display root note on root finder image
+    - No code to display root note on root finder image yet
     - Many arbitory values and hard coded values / fonts
 
 Credits:
