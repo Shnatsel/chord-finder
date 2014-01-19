@@ -9,6 +9,7 @@ This program displays graphical representations of various static and movable ch
 For more information about the code, see the docs directory
 
 Requirements:
+- sox package (from yum or apt), if chord playback is required
 - python 2.7
 - wx widgets
 - Linux (this code is not tested on windows, please email me with feedback and info of experiences)
