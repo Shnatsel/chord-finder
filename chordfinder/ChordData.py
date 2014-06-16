@@ -30,15 +30,10 @@ class ChordDatabase:
 
 
   def get_single_chord_obj(self, chord_type_wanted, chord_name_wanted):
-    found = 0
     for chord in self.chord_list:
       if (chord.shortName == chord_name_wanted) and (chord.chordType == chord_type_wanted):
-        found = 1
-        break
-    if found == 1:
-      return chord
-    else:
-      raise ChordNotFound
+        return chord
+    raise ChordNotFound
 
 	# Get all chord names
   def get_all_chord_names(self):
@@ -102,9 +97,8 @@ class ChordDatabase:
     os.system(cmd_str)
 
 
-####################################################
-# A class that holds data for a single static chord
 class Chord:
+  '''A class that holds data for a single static chord'''
   def __init__(self, chord_type, root, short_name, long_name, finger_str, fret_str):
     self.chor_type = chord_type
     self.root = root

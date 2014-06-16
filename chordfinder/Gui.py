@@ -9,19 +9,19 @@ class FilterError(Exception):
   pass
 
 class MainFrame(wx.Frame):
-  """ The gui class """
-##################
-# EVENT HANDELERS
-##################
+  ''' The gui class '''
+  # Event handlers
+
   def on_about(self, event):
-    """ Triggered when "about" is selected from menus, just a simple dialog window """
+    ''' Triggered when "about" is selected from menus, just a simple dialog window'''
     dialog = wx.MessageDialog(self, 'Welcome to chord finder\n \
     \nPlease report bugs to:\n robert.m.pearce@googlemail.com', 'About chord finder', wx.OK | wx.ICON_INFORMATION)
     dialog.ShowModal()
     dialog.Destroy()
 
+
   def on_chord_changed(self, event, chord_db, config):
-    """ Triggered when chord name dropdown list is altered. Sets up images for new chord """
+    '''Triggered when chord name dropdown list is altered. Sets up images for new chord'''
     chord_name = self.chord_name_combo.GetValue()
 
     chord_output_file = tempfile.NamedTemporaryFile('w')
@@ -49,6 +49,7 @@ class MainFrame(wx.Frame):
       self.chord_bitmap.SetBitmap(wx.Bitmap(chord_output_file.name))
       self.SetStatusText('Showing: ' + chord_obj.longName)
 
+
   def prev_or_next_chord(self, event, direction, chord_db, config):
     ''' Shift selected chord by one position '''
     curr_selected = self.chord_name_combo.GetSelection()
@@ -62,6 +63,7 @@ class MainFrame(wx.Frame):
       # Move to last item in list
       self.chord_name_combo.SetSelection(self.chord_name_combo.GetCount()-1)
     self.on_chord_changed(self, chord_db, config)
+
 
   def on_filter_changed(self, event, chord_db, config):
     ''' Triggered when filter radio box is altered
@@ -95,12 +97,14 @@ class MainFrame(wx.Frame):
     self.chord_name_combo.SetValue(self.chord_name_combo.GetString(0))
     self.on_chord_changed(event, chord_db, config)
 
+
   def on_exit(self, event):
-    """ Simple exit function """
+    '''Simple exit function'''
     self.Close(True)
 
+
   def on_play_chord(self, event, chord_db):
-    ''' Delegate out to bash playing a chord, avoid wheel reinvention '''
+    '''Delegate out to bash playing a chord, avoid wheel reinvention'''
 
     chord_name = self.chord_name_combo.GetValue()
     if not chord_name:
@@ -114,12 +118,10 @@ class MainFrame(wx.Frame):
       chord_db.playChordFromObj(chord_obj)
 
 
-#########################
 # END OF EVENT HANDELERS
-#########################
 
   def __init__(self, parent, ident, title, chord_db, config):
-    """ Main gui class """
+    '''Main gui class'''
     wx.Frame.__init__(self, parent, ident, title, wx.DefaultPosition, wx.Size(500, 600))
 
     favicon = wx.Icon(config['data_dir']+'favicon.ico', wx.BITMAP_TYPE_ICO, 16, 16)
@@ -182,6 +184,7 @@ class MainFrame(wx.Frame):
     self.__set_properties(config=config)
     self.__do_layout()
 
+
   def __set_properties(self, config):
     """ Deal with any property setting needs """
     self.SetTitle('Guitar Chord Finder: ' + config['VERSION'])
@@ -191,6 +194,7 @@ class MainFrame(wx.Frame):
     self.root_filter_combo.SetSelection(0)
     self.aug_dim_combo.SetSelection(0)
     self.chord_name_combo.SetSelection(-1)
+
 
   def __do_layout(self):
     """ Deal with the arrangement of the widgets """
