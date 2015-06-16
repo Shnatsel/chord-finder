@@ -41,9 +41,17 @@ Static,E,E,E Major,0 2 3 1 0 0,0 2 2 1 0 0
 Static,E,Em,E Minor,0 2 3 0 0 0,0 2 2 0 0 0
 Static,E,E5,E Powerchord (no third),0 2 3 0 0 0,0 2 2 -1 -1 -1
 Static,E,E7sus4,E Dominant 7th Suspended 4th,0 2 0 4 0 0,0 2 0 2 0 0
-Static,E,Em(maj7),E Minor (Major 7th),0 2 1 0 0 0,0 2 1 0 0 0
+Static,E,Em(maj7,E Minor (Major 7th),0 2 1 0 0 0,0 2 1 0 0 0
 Static,E,Em7*,E Minor 7th (alt. voicing),0 1 2 0 3 4,0 2 2 0 3 3
 Static,E,Emaj7,E Major 7th,0 3 1 2 0 0,0 2 1 1 0 0
+Static,F,F,F Major,0 0 3 2 1 1,-1 0 3 2 1 1 
+Static,F,F69,F69,1 0 0 0 2 3,1 0 0 0 1 1
+Static,F,Fm7,F Minor 7th,1 3 1 1 1 1,1 3 1 1 1 1
+Static,F,Fdim,F Diminished,0 0 0 1 0 2,-1 -1 0 1 0 1
+Static,F,F5,F5 Power Chord,1 3 4 0 0 0,1 3 3 -1 -1 -1 
+Static,F,Faug,F Augmented,0 0 1 3 4 2,-1 -1 1 4 4 3
+Static,F,F9,F9,3 0 4 2 1 1,3 0 3 2 1 1
+Static,F,Fsus4,F Suspended 4th,0 0 3 4 1 1,-1 -1 3 3 1 1
 Static,G,G/F#,G Major on F Sharp,1 0 0 0 0 3,2 -1 0 0 0 3
 Static,G,G/B,G Major on B (1st inv.),0 1 0 0 3 4,-1 2 0 0 3 3
 Static,G,Gsus4,G Suspended 4th,3 0 0 0 1 4,3 -1 0 0 1 3
