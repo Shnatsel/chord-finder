@@ -111,7 +111,7 @@ def draw_string_data_and_finger_circles(draw, instrument, finger_data_list, mova
               x_pos+instrument.top_gap_data_size, y_pos+instrument.top_gap_data_size), outline=None)
     elif fret_num > 0:    # not -1 or 0 of "X" or "O", must be fingering information
       draw_finger_circles(draw, instrument, movable_shift, finger_data_list, fret_num, string_num, font_path, palette)
-    return draw
+  return draw
 
 
 def draw_chord(instrument, palette, chord_type, finger_data_str, fret_data_str, image_dimentions, output_file):

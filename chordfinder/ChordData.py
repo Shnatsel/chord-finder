@@ -31,7 +31,7 @@ class ChordDatabase:
 
   def get_single_chord_obj(self, chord_type_wanted, chord_name_wanted):
     for chord in self.chord_list:
-      if (chord.shortName == chord_name_wanted) and (chord.chordType == chord_type_wanted):
+      if (chord.short_name == chord_name_wanted) and (chord.chord_type == chord_type_wanted):
         return chord
     raise ChordNotFound
 
@@ -40,7 +40,7 @@ class ChordDatabase:
     chord_name_list = []
 
     for chord in self.chord_list:
-      chord_name_list.append(chord.shortName)
+      chord_name_list.append(chord.short_name)
     return chord_name_list
 
 	# Return filtered chord names
@@ -49,24 +49,24 @@ class ChordDatabase:
 
     for chord in self.chord_list:
       filter_out = 0
-      if chord.chordType != type_wanted:
+      if chord.chord_type != type_wanted:
         filter_out += 1
 
       if (root_str != 'All') and (chord.root != root_str):
         filter_out += 1
 
-      if (dim_aug_wanted != 'All') and (chord.longName.find(dim_aug_wanted) == -1):
+      if (dim_aug_wanted != 'All') and (chord.long_name.find(dim_aug_wanted) == -1):
         filter_out += 1
 
       if filter_out == 0:
-        chord_name_list.append(chord.shortName)
+        chord_name_list.append(chord.short_name)
     return chord_name_list
 
   def play_chord_from_obj(self, chord_obj):
     ''' Play a chord using the linux sox play command from a given chord object '''
     open_strings = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']
     notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
-    fret_data = chord_obj.fretStr.split()
+    fret_data = chord_obj.fret_str.split()
     chord_str = ''
 
     for i, fret_pos in enumerate(fret_data):
@@ -100,7 +100,7 @@ class ChordDatabase:
 class Chord:
   '''A class that holds data for a single static chord'''
   def __init__(self, chord_type, root, short_name, long_name, finger_str, fret_str):
-    self.chor_type = chord_type
+    self.chord_type = chord_type
     self.root = root
     self.short_name = short_name
     self.long_name = long_name

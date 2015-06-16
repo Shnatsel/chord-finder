@@ -15,7 +15,7 @@ class MainFrame(wx.Frame):
   def on_about(self, event):
     ''' Triggered when "about" is selected from menus, just a simple dialog window'''
     dialog = wx.MessageDialog(self, 'Welcome to chord finder\n \
-    \nPlease report bugs to:\n robert.m.pearce@googlemail.com', 'About chord finder', wx.OK | wx.ICON_INFORMATION)
+    \nPlease report bugs to:\n siology.io@gmail.com', 'About chord finder', wx.OK | wx.ICON_INFORMATION)
     dialog.ShowModal()
     dialog.Destroy()
 
@@ -31,7 +31,7 @@ class MainFrame(wx.Frame):
     palette_obj = Palettes.Palette(self.palette_radio.GetSelection())
 
     try:
-      chord_obj = chord_db.getSingleChordObj(self.chord_type_radio.GetStringSelection(), chord_name)
+      chord_obj = chord_db.get_single_chord_obj(self.chord_type_radio.GetStringSelection(), chord_name)
     except ChordData.ChordNotFound:
       self.SetStatusText("Chord: {0} was not found in chord data archive".format(chord_name))
     else:
@@ -45,9 +45,9 @@ class MainFrame(wx.Frame):
         self.Refresh()
 
       # Main chord info is shown either way
-      DrawChord.draw_chord(instrument_obj, palette_obj, chord_obj.chordType, chord_obj.fingerStr, chord_obj.fretStr, (290, 490), chord_output_file)
+      DrawChord.draw_chord(instrument_obj, palette_obj, chord_obj.chord_type, chord_obj.finger_str, chord_obj.fret_str, (290, 490), chord_output_file)
       self.chord_bitmap.SetBitmap(wx.Bitmap(chord_output_file.name))
-      self.SetStatusText('Showing: ' + chord_obj.longName)
+      self.SetStatusText('Showing: ' + chord_obj.long_name)
 
 
   def prev_or_next_chord(self, event, direction, chord_db, config):
@@ -90,7 +90,7 @@ class MainFrame(wx.Frame):
     else:
       raise FilterError
 
-    self.chord_name_combo.AppendItems(chord_db.getFilteredChordNames(self.chord_type_radio.GetStringSelection(),
+    self.chord_name_combo.AppendItems(chord_db.get_filtered_chord_names(self.chord_type_radio.GetStringSelection(),
         self.root_filter_combo.GetStringSelection(), aug_dim_wanted_long))
 
     # Set combo to be new first entry and then change image to match
@@ -111,11 +111,11 @@ class MainFrame(wx.Frame):
       return 1
 
     try:
-      chord_obj = chord_db.getSingleChordObj(self.chord_type_radio.GetStringSelection(), chord_name)
+      chord_obj = chord_db.get_single_chord_obj(self.chord_type_radio.GetStringSelection(), chord_name)
     except ChordData.ChordNotFound:
       self.SetStatusText("Chord: {0} was not found in chord data archive".format(chord_name))
     else:
-      chord_db.playChordFromObj(chord_obj)
+      chord_db.play_chord_from_obj(chord_obj)
 
 
 # END OF EVENT HANDELERS
@@ -155,7 +155,7 @@ class MainFrame(wx.Frame):
 
     # Dropdown list of chord names with prev/next buttons
     self.prev_chord_button = wx.Button(self, -1, label='<', size=(30, 30))
-    self.chord_name_combo = wx.ComboBox(self, -1, choices=chord_db.getAllChordNames(), style=wx.CB_DROPDOWN, size=(130, 30))
+    self.chord_name_combo = wx.ComboBox(self, -1, choices=chord_db.get_all_chord_names(), style=wx.CB_DROPDOWN, size=(130, 30))
     self.next_chord_button = wx.Button(self, -1, label='>', size=(30, 30))
 
     self.chord_name_combo.Bind(wx.EVT_COMBOBOX, lambda evt, cdb=chord_db, cfg=config: self.on_chord_changed(evt, cdb, cfg))
