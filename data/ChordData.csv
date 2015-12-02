@@ -56,8 +56,10 @@ Static,G,G/F#,G Major on F Sharp,1 0 0 0 0 3,2 -1 0 0 0 3
 Static,G,G/B,G Major on B (1st inv.),0 1 0 0 3 4,-1 2 0 0 3 3
 Static,G,Gsus4,G Suspended 4th,3 0 0 0 1 4,3 -1 0 0 1 3
 Static,G,G7,G Dominant 7th,3 2 0 0 0 1,3 2 0 0 0 1
+Static,G,G5,G Powerchord (no third),1 3 4 0 0 0,3 5 5 -1 -1 -1
 Static,G,G6,G Added 6th,2 1 0 0 0 0,3 2 0 0 0 0
 Static,G,Gm,G Minor,1 3 4 1 1 1,3 5 5 3 3 3
+Static,G,Gm7,G Minor 7th,1 3 1 1 1 1,3 5 3 3 3 3
 Static,G,Gmaj7,G Major 7th,3 2 0 0 0 1,3 2 0 0 0 2
 Static,G,G,G Major,2 1 0 0 0 3,3 2 0 0 0 3
 Static,G,G*,G Major (alt. voicing),2 1 0 0 3 4,3 2 0 0 3 3
