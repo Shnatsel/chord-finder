@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='chord_finder',
-        version='0.9.2',
+        version='0.9.3',
         author='Robert Pearce',
         author_email='siology.io@gmail.com',
         url='https://github.com/robertpearce/chord-finder',
